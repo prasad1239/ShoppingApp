@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imageView_layout_height"
+            android:layout_marginTop="@dimen/imageView_layout_margintop"
+            app:srcCompat="@drawable/logo_main" />
+
+        <EditText
+            android:id="@+id/eTFirst_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/registration_layout_marginLeft"
+            android:layout_marginTop="@dimen/registration_layout_marginTop"
+            android:layout_marginRight="@dimen/registration_layout_marginRight"
+            android:layout_marginBottom="@dimen/registration_layout_marginBottom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/first_name" />
+
+        <EditText
+            android:id="@+id/eTLast_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/registration_layout_marginLeft"
+            android:layout_marginRight="@dimen/registration_layout_marginRight"
+            android:layout_marginBottom="@dimen/registration_layout_marginBottom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/last_name" />
+
+        <EditText
+            android:id="@+id/eTUser_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/registration_layout_marginLeft"
+            android:layout_marginRight="@dimen/registration_layout_marginRight"
+            android:layout_marginBottom="@dimen/registration_layout_marginBottom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/User_Id" />
+
+        <EditText
+            android:id="@+id/eTPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Password"
+            android:layout_marginLeft="@dimen/registration_layout_marginLeft"
+            android:layout_marginRight="@dimen/registration_layout_marginRight"
+            android:layout_marginBottom="@dimen/registration_layout_marginBottom"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/eTMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_number"
+            android:layout_marginLeft="@dimen/registration_layout_marginLeft"
+            android:layout_marginRight="@dimen/registration_layout_marginRight"
+            android:layout_marginBottom="@dimen/mobile_no_layout_marginBottom"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/registration_layout_marginLeft"
+            android:layout_marginRight="@dimen/registration_layout_marginRight"
+
+            android:text="@string/register"
+            app:backgroundTint="@color/ez_cart_pink" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/ez_cart_pink"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Registration"
+        app:titleTextColor="@color/white" />
+
+
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

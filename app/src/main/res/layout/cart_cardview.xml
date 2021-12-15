@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cart_cardview_layoutmargin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cart_constraint_layout_padding">
+
+        <ImageView
+            android:id="@+id/ivCart"
+            android:layout_width="@dimen/cart_ivCart_layout_width"
+            android:layout_height="@dimen/cart_ivCart_layout_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCartItemName"
+            android:layout_width="@dimen/cart_text_view_layout_width"
+            android:layout_height="@dimen/cart_text_view_layout_height"
+            android:layout_marginLeft="@dimen/cart_text_view_layout_margin_left"
+            android:textSize="@dimen/cart_text_view_textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivCart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCartItemPrice"
+            android:layout_width="@dimen/cart_text_view_layout_width"
+            android:layout_height="@dimen/cart_text_view_layout_height"
+            android:layout_marginLeft="@dimen/cart_text_view_layout_margin_left"
+            android:textSize="@dimen/cart_text_view_textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivCart"
+            app:layout_constraintTop_toBottomOf="@id/tvCartItemName" />
+
+        <Button
+            android:id="@+id/cartDeleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/delete_item"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/cart_delete_btn_layout_marginTop"
+            app:backgroundTint="@color/ez_cart_pink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivCart"
+            app:layout_constraintTop_toBottomOf="@+id/tvCartItemPrice" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

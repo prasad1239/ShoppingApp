@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/ez_cart_pink"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Title" />
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_product"
+        tools:srcCompat="@tools:sample/avatars" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/linear_layout_margin"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="@dimen/linear_layout_padding"
+        app:layout_constraintTop_toBottomOf="@+id/productImage">
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_text_size" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/free_delivery"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_text_size" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delivered_by_oct_7"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_text_size" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_top_margin"
+            android:text="@string/sold_by_avenue_supermart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_text_size" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="@dimen/layout_width_btnAddToCart"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin_btnAddToCart"
+        android:background="@color/ez_cart_pink"
+        android:text="@string/add_to_cart"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

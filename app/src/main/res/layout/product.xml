@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_layoutmargin">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/constraint_layout_padding">
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="@dimen/ivProduct_layout_width"
+            android:layout_height="@dimen/ivProduct_layout_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="@dimen/text_view_layout_width"
+            android:layout_height="@dimen/text_view_layout_height"
+            android:layout_marginLeft="@dimen/text_view_layout_margin_left"
+            android:textSize="@dimen/text_view_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivProduct"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProductDetail"
+            android:layout_width="@dimen/text_view_layout_width"
+            android:layout_height="@dimen/text_view_layout_height"
+            android:layout_marginLeft="@dimen/text_view_layout_margin_left"
+            android:textSize="@dimen/text_view_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivProduct"
+            app:layout_constraintTop_toBottomOf="@id/tvProductName" />
+
+        <TextView
+            android:id="@+id/tvProductCost"
+            android:layout_width="@dimen/text_view_layout_width"
+            android:layout_height="@dimen/text_view_layout_height"
+            android:layout_marginLeft="@dimen/text_view_layout_margin_left"
+            android:textSize="@dimen/text_view_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivProduct"
+            app:layout_constraintTop_toBottomOf="@id/tvProductDetail" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

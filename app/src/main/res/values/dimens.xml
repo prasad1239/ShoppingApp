@@ -1,0 +1,113 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- activity_main.xml -->
+    <dimen name="fragment_container_layout_width">409dp</dimen>
+    <dimen name="fragment_container_layout_height">729dp</dimen>
+
+    <!-- activity_product_details.xml -->
+    <dimen name="linear_layout_margin">16dp</dimen>
+    <dimen name="linear_layout_padding">5dp</dimen>
+    <dimen name="text_view_text_size">20dp</dimen>
+    <dimen name="text_view_top_margin">10dp</dimen>
+    <dimen name="layout_width_btnAddToCart">300dp</dimen>
+    <dimen name="bottom_margin_btnAddToCart">20dp</dimen>
+
+    <!-- appbar_home_screen.xml -->
+    <dimen name="app_bar_image_view_layout_marginEnd">40dp</dimen>
+
+    <!-- banner_pager.xml -->
+    <dimen name="ivBanner_layout_height">250dp</dimen>
+    <dimen name="ivBanner_layout_top_margin">10dp</dimen>
+
+    <!-- content_home_screen.xml -->
+    <dimen name="viewPager_layout_height">250dp</dimen>
+    <dimen name="viewPager_layout_margin_top">10dp</dimen>
+    <dimen name="recyclerView_layout_height">470dp</dimen>
+
+    <!-- drawer_header.xml -->
+    <dimen name="linear_layout_compat_padding">16dp</dimen>
+    <dimen name="userImage_layout_width">80dp</dimen>
+    <dimen name="userImage_layout_height">80dp</dimen>
+    <dimen name="userName_layout_marginTop">16dp</dimen>
+
+    <!-- fragment_feedback.xml -->
+    <dimen name="eTFeedback_padding">20dp</dimen>
+    <dimen name="Feedback_text_size">40sp</dimen>
+    <dimen name="rate_now_layout_marginStart">10dp</dimen>
+    <dimen name="rate_now_layout_marginLeft">10dp</dimen>
+
+    <!-- fragment_login.xml -->
+    <dimen name="imageView_layout_margintop">90dp</dimen>
+    <dimen name="layout_marginLeft">64dp</dimen>
+    <dimen name="layout_marginRight">64dp</dimen>
+    <dimen name="layout_marginTop">64dp</dimen>
+    <dimen name="layout_marginBottom">32dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="btnSignUp_marginLeft">128dp</dimen>
+    <dimen name="btnSignUp_marginRight">128dp</dimen>
+    <dimen name="btnSignUp_marginBottom">32dp</dimen>
+
+    <!-- fragment_registration.xml -->
+    <dimen name="imageView_layout_height">88dp</dimen>
+    <dimen name="imageView_marginTop">60dp</dimen>
+    <dimen name="registration_layout_marginTop">28dp</dimen>
+    <dimen name="registration_layout_marginRight">64dp</dimen>
+    <dimen name="registration_layout_marginBottom">28dp</dimen>
+    <dimen name="registration_layout_marginLeft">64dp</dimen>
+    <dimen name="mobile_no_layout_marginBottom">66dp</dimen>
+
+    <!-- product.xml -->
+    <dimen name="cardview_layoutmargin">5dp</dimen>
+    <dimen name="constraint_layout_padding">16dp</dimen>
+    <dimen name="ivProduct_layout_width">100dp</dimen>
+    <dimen name="ivProduct_layout_height">99dp</dimen>
+    <dimen name="text_view_layout_width">236dp</dimen>
+    <dimen name="text_view_layout_height">33dp</dimen>
+    <dimen name="text_view_layout_margin_left">16dp</dimen>
+    <dimen name="text_view_textsize">16sp</dimen>
+
+    <!-- fragment_order.xml -->
+    <dimen name="orderRecyclerView_layout_marginTop">60dp</dimen>
+
+    <!-- order_card_view.xml -->
+    <dimen name="order_cardview_layoutmargin">5dp</dimen>
+    <dimen name="order_constraint_layout_padding">16dp</dimen>
+    <dimen name="order_ivOrder_layout_width">100dp</dimen>
+    <dimen name="order_ivOrder_layout_height">99dp</dimen>
+    <dimen name="order_text_view_layout_width">236dp</dimen>
+    <dimen name="order_text_view_layout_height">33dp</dimen>
+    <dimen name="order_text_view_layout_margin_left">16dp</dimen>
+    <dimen name="order_text_view_textsize">16sp</dimen>
+
+    <!-- fragment_view_cart.xml -->
+    <dimen name="fragment_view_cart_text_size">40sp</dimen>
+
+    <!-- cart_card_view.xml -->
+    <dimen name="cart_cardview_layoutmargin">5dp</dimen>
+    <dimen name="cart_constraint_layout_padding">16dp</dimen>
+    <dimen name="cart_ivCart_layout_width">100dp</dimen>
+    <dimen name="cart_ivCart_layout_height">99dp</dimen>
+    <dimen name="cart_text_view_layout_width">236dp</dimen>
+    <dimen name="cart_text_view_layout_height">33dp</dimen>
+    <dimen name="cart_text_view_layout_margin_left">16dp</dimen>
+    <dimen name="cart_text_view_textsize">16sp</dimen>
+    <dimen name="cart_delete_btn_layout_marginTop">10dp</dimen>
+
+    <!-- activity_cart.xml -->
+    <dimen name="cart_activity_toolbar_layoutWidth">409dp</dimen>
+    <dimen name="cart_activity_textview_layout_marginTop">16dp</dimen>
+    <dimen name="cart_activity_linearlayout_Width">0dp</dimen>
+    <dimen name="cart_activity_linearlayout_padding">10dp</dimen>
+    <dimen name="cart_activity_linearlayout_paddingstart">10dp</dimen>
+    <dimen name="cart_total_textsize">25sp</dimen>
+    <dimen name="btnPlaceOrder_textsize">16sp</dimen>
+    <dimen name="btnPlaceOrder_layout_marginHorizontal">20dp</dimen>
+    <dimen name="btnPlaceOrder_layout_width">0dp</dimen>
+
+</resources>

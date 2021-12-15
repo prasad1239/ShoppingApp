@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ShoppingApp</string>
+    <string name="SignUp"><u>SignUp</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="view_cart">View Cart</string>
+    <string name="your_orders">Your Orders</string>
+    <string name="feedback">Feedback</string>
+    <string name="logout">Logout</string>
+    <string name="help">Help</string>
+    <string name="home_screen_title">Home</string>
+    <string name="john_doe">John Doe</string>
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="textview">TextView</string>
+    <string name="free_delivery">Free Delivery</string>
+    <string name="delivered_by_oct_7">Delivered by Oct 7</string>
+    <string name="sold_by_avenue_supermart">Sold By : Avenue SuperMart</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="your_feedback">Your Feedback</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="User_Id">User ID</string>
+    <string name="Password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="register">Register</string>
+    <string name="view_your_cart">View Your Cart</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="hay_no_delivery_charges_on_this_order">Hay!No delivery charges on this order</string>
+    <string name="place_order">Place Order</string>
+</resources>

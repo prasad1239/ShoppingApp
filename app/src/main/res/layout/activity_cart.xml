@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="Your Cart"
+        app:titleTextColor="@color/white"
+        android:id="@+id/toolbar2"
+        android:layout_width="@dimen/cart_activity_toolbar_layoutWidth"
+        android:layout_height="wrap_content"
+        android:background="@color/ez_cart_pink"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hay_no_delivery_charges_on_this_order"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/cart_activity_textview_layout_marginTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/footer"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="@dimen/cart_activity_linearlayout_Width"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:orientation="vertical"
+            android:padding="@dimen/cart_activity_linearlayout_padding"
+            android:paddingStart="@dimen/cart_activity_linearlayout_paddingstart">
+            <TextView
+                android:id="@+id/carttotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cart_total_textsize"
+                android:text="$"
+                android:textStyle="bold"
+                android:textColor="@color/ez_cart_pink"
+                />
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="16sp"-->
+<!--                android:text="You save $76"-->
+<!--                />-->
+
+        </LinearLayout>
+        <Button
+            android:layout_width="@dimen/btnPlaceOrder_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/ez_cart_pink"
+            android:text="@string/place_order"
+            android:layout_marginHorizontal="@dimen/btnPlaceOrder_layout_marginHorizontal"
+            android:textSize="@dimen/btnPlaceOrder_textsize" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
